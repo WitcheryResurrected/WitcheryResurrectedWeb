@@ -1,5 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+import './client/styles/bootstrap.min.css'
+import './client/styles/index.css'
+
+import Router from './client/Router.jsx'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<Router/>)
